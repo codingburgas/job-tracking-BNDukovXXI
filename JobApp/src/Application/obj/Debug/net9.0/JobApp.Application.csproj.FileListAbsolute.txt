@@ -1,0 +1,16 @@
+C:\Users\User\Downloads\job-tracking-BNDukovXXI\JobApp\src\Application\obj\Debug\net9.0\JobApp.Application.csproj.AssemblyReference.cache
+C:\Users\User\Downloads\job-tracking-BNDukovXXI\JobApp\src\Application\obj\Debug\net9.0\JobApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Downloads\job-tracking-BNDukovXXI\JobApp\src\Application\obj\Debug\net9.0\JobApp.Application.AssemblyInfoInputs.cache
+C:\Users\User\Downloads\job-tracking-BNDukovXXI\JobApp\src\Application\obj\Debug\net9.0\JobApp.Application.AssemblyInfo.cs
+C:\Users\User\Downloads\job-tracking-BNDukovXXI\JobApp\src\Application\obj\Debug\net9.0\JobApp.Application.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\job-tracking-BNDukovXXI\JobApp\src\Application\obj\Debug\net9.0\JobApp.Application.sourcelink.json
+C:\Users\User\Downloads\job-tracking-BNDukovXXI\JobApp\src\Application\bin\Debug\net9.0\JobApp.Application.deps.json
+C:\Users\User\Downloads\job-tracking-BNDukovXXI\JobApp\src\Application\bin\Debug\net9.0\JobApp.Application.dll
+C:\Users\User\Downloads\job-tracking-BNDukovXXI\JobApp\src\Application\bin\Debug\net9.0\JobApp.Application.pdb
+C:\Users\User\Downloads\job-tracking-BNDukovXXI\JobApp\src\Application\bin\Debug\net9.0\JobApp.Core.dll
+C:\Users\User\Downloads\job-tracking-BNDukovXXI\JobApp\src\Application\bin\Debug\net9.0\JobApp.Core.pdb
+C:\Users\User\Downloads\job-tracking-BNDukovXXI\JobApp\src\Application\obj\Debug\net9.0\JobApp.A.A1F876F5.Up2Date
+C:\Users\User\Downloads\job-tracking-BNDukovXXI\JobApp\src\Application\obj\Debug\net9.0\JobApp.Application.dll
+C:\Users\User\Downloads\job-tracking-BNDukovXXI\JobApp\src\Application\obj\Debug\net9.0\refint\JobApp.Application.dll
+C:\Users\User\Downloads\job-tracking-BNDukovXXI\JobApp\src\Application\obj\Debug\net9.0\JobApp.Application.pdb
+C:\Users\User\Downloads\job-tracking-BNDukovXXI\JobApp\src\Application\obj\Debug\net9.0\ref\JobApp.Application.dll

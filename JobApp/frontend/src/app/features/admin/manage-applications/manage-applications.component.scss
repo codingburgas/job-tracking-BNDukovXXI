@@ -1,0 +1,9 @@
+// Използва същите стилове като manage-jobs.component.scss
+@import '../manage-jobs/manage-jobs.component.scss';
+
+.no-data {
+  text-align: center;
+  color: grey;
+  padding: 4rem;
+  font-size: 1.2rem;
+}

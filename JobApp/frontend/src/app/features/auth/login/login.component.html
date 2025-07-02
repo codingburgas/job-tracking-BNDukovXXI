@@ -1,0 +1,31 @@
+<div class="form-container">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Вход в системата</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="outline">
+          <mat-label>Имейл</mat-label>
+          <input matInput formControlName="email" type="email" required>
+          <mat-error *ngIf="loginForm.get('email')?.hasError('required')">Полето е задължително</mat-error>
+          <mat-error *ngIf="loginForm.get('email')?.hasError('email')">Въведете валиден имейл</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Парола</mat-label>
+          <input matInput formControlName="password" type="password" required>
+           <mat-error *ngIf="loginForm.get('password')?.hasError('required')">Полето е задължително</mat-error>
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid || isLoading" class="form-submit-button">
+          <span *ngIf="!isLoading">Вход</span>
+          <mat-progress-spinner *ngIf="isLoading" mode="indeterminate" diameter="24"></mat-progress-spinner>
+        </button>
+      </form>
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <a routerLink="/register">Нямате акаунт? Регистрирайте се</a>
+    </mat-card-actions>
+  </mat-card>
+</div>

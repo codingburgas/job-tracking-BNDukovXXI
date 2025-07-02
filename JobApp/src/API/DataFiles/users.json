@@ -1,0 +1,11 @@
+[
+  {
+    "Id": "ae27c771-cc90-4dd3-b4e5-45bf79523434",
+    "FirstName": "Admin",
+    "LastName": "User",
+    "UserName": "adminuser",
+    "Email": "admin@jobapp.com",
+    "PasswordHash": "$2a$11$sj2ZqbmHJXk7ph6cEY6sF.dBHjiouTW.CS6hI9i73rC4hckMWmPyG",
+    "Role": "Admin"
+  }
+]

@@ -1,0 +1,16 @@
+.admin-container {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  td.mat-cell, th.mat-header-cell {
+    padding-right: 16px;
+  }
+}

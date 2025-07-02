@@ -1,0 +1,59 @@
+.job-list-container {
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+}
+
+.no-jobs {
+  text-align: center;
+  color: grey;
+  padding: 4rem;
+
+  mat-icon {
+    font-size: 4rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+.job-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.job-card {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.job-description-preview {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+mat-card-actions {
+  display: flex;
+  align-items: center;
+
+  span {
+    font-size: 0.8rem;
+    color: grey;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+}

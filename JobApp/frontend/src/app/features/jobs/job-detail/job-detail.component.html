@@ -1,0 +1,43 @@
+<div *ngIf="isLoading" class="spinner-container">
+  <mat-spinner></mat-spinner>
+</div>
+
+<div *ngIf="!isLoading && !job" class="not-found">
+  <mat-icon>error_outline</mat-icon>
+  <h2>Обявата не е намерена</h2>
+  <a mat-stroked-button routerLink="/jobs">Обратно към обявите</a>
+</div>
+
+<div *ngIf="!isLoading && job" class="job-detail-container">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>{{ job.title }}</mat-card-title>
+      <mat-card-subtitle>{{ job.company }} | Публикувана на: {{ job.datePosted | date:'longDate' }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+      <!-- Използваме nl2br pipe, за да превърнем новите редове в <br> тагове -->
+      <p [innerHTML]="job.description | nl2br"></p>
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <div *ngIf="user$ | async as user; else showLogin">
+        <button
+          *ngIf="user.role === 'User' && !hasApplied"
+          mat-raised-button
+          color="primary"
+          (click)="apply()"
+          [disabled]="isApplying">
+          <span *ngIf="!isApplying">Кандидатствай</span>
+          <mat-progress-spinner *ngIf="isApplying" mode="indeterminate" diameter="20"></mat-progress-spinner>
+        </button>
+        <div *ngIf="hasApplied" class="applied-message">
+          <mat-icon color="primary">check_circle</mat-icon>
+          <span>Вече сте кандидатствали за тази позиция.</span>
+        </div>
+      </div>
+      <ng-template #showLogin>
+        <a mat-stroked-button routerLink="/login">Влезте, за да кандидатствате</a>
+      </ng-template>
+    </mat-card-actions>
+  </mat-card>
+</div>

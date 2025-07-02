@@ -1,0 +1,74 @@
+/* You can add global styles to this file, and also import other style files */
+
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$jobapp-primary: mat.define-palette(mat.indigo-palette);
+$jobapp-accent: mat.define-palette(mat.pink-palette, A200, A100, A400);
+$jobapp-warn: mat.define-palette(mat.red-palette);
+
+$jobapp-theme: mat.define-light-theme((
+  color: (
+    primary: $jobapp-primary,
+    accent: $jobapp-accent,
+    warn: $jobapp-warn,
+  )
+));
+
+@include mat.all-component-themes($jobapp-theme);
+
+html, body { 
+  height: 100%; 
+}
+
+body { 
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
+  background-color: #f5f5f5;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.snackbar-success {
+  background-color: #4caf50; // Зелено
+  color: white;
+}
+
+.snackbar-error {
+  background-color: #f44336; // Червено
+  color: white;
+}
+
+.status-submitted {
+  background-color: #2196f3 !important; // Синьо
+  color: white !important;
+}
+.status-approved {
+  background-color: #4caf50 !important; // Зелено
+  color: white !important;
+}
+.status-rejected {
+  background-color: #f44336 !important; // Червено
+  color: white !important;
+}

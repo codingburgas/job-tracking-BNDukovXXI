@@ -1,0 +1,48 @@
+.not-found {
+  text-align: center;
+  padding: 4rem;
+  color: grey;
+
+  mat-icon {
+    font-size: 4rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  h2 {
+    margin: 1rem 0;
+  }
+}
+
+.job-detail-container {
+  max-width: 900px;
+  margin: 2rem auto;
+
+  mat-card-header {
+    padding-bottom: 16px;
+  }
+  
+  mat-card-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  mat-card-subtitle {
+    font-size: 1rem;
+  }
+
+  mat-card-content {
+    padding-top: 24px;
+    font-size: 1rem;
+    line-height: 1.6;
+    white-space: pre-wrap; // Запазва новите редове
+  }
+}
+
+.applied-message {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: green;
+  font-weight: 500;
+}
